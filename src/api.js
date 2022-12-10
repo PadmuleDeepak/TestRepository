@@ -15,13 +15,13 @@ const tasks = {};
 
 // To get all tasks
 router.get('/tasks', (req, res) => {
-    // resp.status(200).send(tasks);
-    // resp.json(tasks);
-    const response = {
-        statusCode: 200,
-        body: JSON.stringify('Okkk'),
-        }
-    return response;
+    res.status(200).send(tasks);
+    res.json(tasks);
+    // const response = {
+    //     statusCode: 200,
+    //     body: JSON.stringify('Okkk'),
+    //     }
+    // return response;
 })
 
 // To create task
